@@ -11,8 +11,8 @@ class tp(object):
     driver_name=''
     executable_path=''
     #用户名，密码
-    username = "010817301045"
-    passwd = "301045"
+    username = "？"
+    passwd = "？"
     # 城市，地区
     starts = "sc01"
     ends = "sc0108"
