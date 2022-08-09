@@ -31,7 +31,7 @@ class tp(object):
         self.msg_from = '550549443@qq.com'  # 发送方邮箱
         self.passwd = 'ndnatjdouhdkbbha'  # 填入发送方邮箱的授权码
         self.msg_to = 'sindre1997@sina.com'  # 收件人邮箱
-    
+
         self.subject = "已抢到座位，速来付款"  # 主题
         self.content = "来自新——邮箱"
         msg = MIMEText (self.content)
@@ -90,9 +90,9 @@ class tp(object):
                         i-=1
                     #print(self.driver.find_by_xpath('//*[@id="ctl00_ContentPlaceHolder1_aecEdit_fvData_ddlKSQX"]/option[6]').bkrl)
                     self.driver.find_by_xpath ('//input[@id="btnAddCourse"]').first.click ()
-                    
+
                     print('进入科目选择')
-                    
+
                     sleep(2)
                     if  self.driver.find_by_xpath ('//*[@id="msg_statistic_pay"]').first.value!=0:
                         sleep(2)
@@ -111,7 +111,7 @@ class tp(object):
                     else:
                         self.send()
                         break
-                    
+
                 except :
                     print ('程序崩溃了，刷新中')
                     self.driver.reload ()
